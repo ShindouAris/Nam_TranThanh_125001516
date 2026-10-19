@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LacHong cafe and tea | Hương vị ấm áp & Tối giản</title>
+
+  <!-- Google Fonts: Playfair Display (Tiêu đề) & Plus Jakarta Sans (Nội dung) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Thư viện Animate.css qua CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Thư viện AOS (Animate On Scroll) CSS qua CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- File CSS chính -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <a href="#home" class="logo">LacHong <span>cafe &amp; tea</span></a>
+
+    <!-- Checkbox hack cho menu trên thiết bị di động (Không dùng JS) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Mở menu điều hướng">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="site-nav" aria-label="Điều hướng chính">
+      <ul>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">Về chúng tôi</a></li>
+        <li><a href="#reviews">Đánh giá</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero">
+      <header class="hero-content">
+        <p class="hero-tag animate__animated animate__fadeInDown">Không gian tĩnh lặng giữa lòng phố thị</p>
+        <h1 class="animate__animated animate__fadeInDown">LacHong cafe and tea</h1>
+        <p class="slogan animate__animated animate__fadeInUp">
+          Nơi mỗi tách cà phê thủ công và chén trà ủ lạnh kể câu chuyện về sự bình yên, mộc mạc và ấm áp.
+        </p>
+        <a href="#contact" class="btn-cta animate__animated animate__pulse animate__infinite">Đặt bàn ngay</a>
+      </header>
+    </section>
+
+    <!-- 2. MENU SECTION (6 sản phẩm tĩnh) -->
+    <section id="menu" class="section-container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Thực Đơn Đặc Trưng</h2>
+        <p>Tuyển chọn từ hạt cà phê rang mộc Cầu Đất và lá trà cổ thụ Tây Bắc</p>
+      </header>
+
+      <div class="menu-grid">
+        <!-- Sản phẩm 1 -->
+        <article class="card menu-card" tabindex="0" data-aos="fade-up" data-aos-delay="100">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Tách Cà Phê Phin Truyền Thống">
+          </figure>
+          <div class="card-body">
+            <h3>Phin Sữa Đá Lạc Hồng</h3>
+            <p>Sự kết hợp hài hòa giữa hạt Robusta đậm đà và Arabica thơm dịu, ủ phin nhôm truyền thống.</p>
+            <strong class="price">39.000đ</strong>
+          </div>
+        </article>
+
+        <!-- Sản phẩm 2 -->
+        <article class="card menu-card" tabindex="0" data-aos="fade-up" data-aos-delay="200">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Ly Caramel Latte nghệ thuật">
+          </figure>
+          <div class="card-body">
+            <h3>Kem Hạnh Nhân Latte</h3>
+            <p>Lớp bọt sữa mịn màng quyện cùng sốt hạnh nhân nướng thủ công, ít ngọt và béo thanh.</p>
+            <strong class="price">55.000đ</strong>
+          </div>
+        </article>
+
+        <!-- Sản phẩm 3 -->
+        <article class="card menu-card" tabindex="0" data-aos="fade-up" data-aos-delay="300">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80" alt="Bình Cà Phê Ủ Lạnh Cold Brew">
+          </figure>
+          <div class="card-body">
+            <h3>Cold Brew Cam Quế</h3>
+            <p>Cà phê ủ lạnh suốt 18 giờ kết hợp lát cam vàng tươi và hương quế rừng ấm nồng.</p>
+            <strong class="price">59.000đ</strong>
+          </div>
+        </article>
+
+        <!-- Sản phẩm 4 -->
+        <article class="card menu-card" tabindex="0" data-aos="fade-up" data-aos-delay="400">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" alt="Ly Trà Ô Long Nhài Kem Phô Mai">
+          </figure>
+          <div class="card-body">
+            <h3>Trà Ô Long Hoa Nhài</h3>
+            <p>Trà Ô Long ướp hoa nhài tự nhiên thanh khiết, phủ lớp macchiato kem phô mai mặn nhẹ.</p>
+            <strong class="price">49.000đ</strong>
+          </div>
+        </article>
+
+        <!-- Sản phẩm 5 -->
+        <article class="card menu-card" tabindex="0" data-aos="fade-up" data-aos-delay="500">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" alt="Ly Trà Đào Cam Sả thanh mát">
+          </figure>
+          <div class="card-body">
+            <h3>Hồng Trà Tuyết Lê</h3>
+            <p>Nền hồng trà Shan Tuyết cổ thụ nấu cùng lê tươi chưng đường phèn, dịu mát cổ họng.</p>
+            <strong class="price">52.000đ</strong>
+          </div>
+        </article>
+
+        <!-- Sản phẩm 6 -->
+        <article class="card menu-card" tabindex="0" data-aos="fade-up" data-aos-delay="600">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=80" alt="Bát Matcha Latte Nhật Bản">
+          </figure>
+          <div class="card-body">
+            <h3>Matcha Uji Sữa Yến Mạch</h3>
+            <p>Bột trà xanh Uji Nhật Bản đánh bông thủ công cùng sữa yến mạch thuần chay thơm bùi.</p>
+            <strong class="price">59.000đ</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. BRAND STORY SECTION (Bố cục 2 cột) -->
+    <section id="about" class="section-container about-section" data-aos="fade-up">
+      <figure class="about-image" data-aos="fade-right" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Không gian bên trong ấm cúng của LacHong cafe and tea">
+      </figure>
+
+      <article class="about-text" data-aos="fade-left" data-aos-delay="200">
+        <h2>Câu Chuyện Của LacHong</h2>
+        <p>
+          Ra đời từ niềm đam mê với nông sản Việt và triết lý sống tối giản, <strong>LacHong cafe and tea</strong> được thiết kế như một trạm dừng chân dịu dàng giữa nhịp sống hối hả. Chúng tôi sử dụng tông màu gỗ trầm và ánh sáng vàng ấm để mỗi góc nhỏ đều mang lại cảm giác thư thái như ở nhà.
+        </p>
+        <p>
+          Không chạy theo công thức công nghiệp, từng mẻ cà phê tại quán đều được rang mộc ở mức vừa phải để giữ trọn hương hoa quả tự nhiên. Mỗi lá trà đều được ủ đúng nhiệt độ để giữ trọn vị chát dịu và hậu ngọt sâu lắng.
+        </p>
+        <a href="#menu" class="btn-outline">Khám phá hương vị</a>
+      </article>
+    </section>
+
+    <!-- 4. CUSTOMER REVIEWS SECTION (3 card) -->
+    <section id="reviews" class="section-container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Cảm Nhận Khách Hàng</h2>
+        <p>Những lời chia sẻ chân thành từ những người bạn đã ghé thăm quán</p>
+      </header>
+
+      <div class="review-grid">
+        <!-- Đánh giá 1 -->
+        <article class="card review-card" tabindex="0" data-aos="zoom-in" data-aos-delay="100">
+          <p class="review-quote">
+            "Không gian quán cực kỳ yên tĩnh, mùi cà phê rang mới thơm dịu khắp phòng. Mình rất thích ngồi làm việc ở bàn gỗ dài cạnh cửa sổ vào mỗi sáng cuối tuần."
+          </p>
+          <footer class="reviewer">
+            <strong>Nguyễn Minh Anh</strong>
+            <span>Kiến trúc sư nội thất</span>
+          </footer>
+        </article>
+
+        <!-- Đánh giá 2 -->
+        <article class="card review-card" tabindex="0" data-aos="zoom-in" data-aos-delay="200">
+          <p class="review-quote">
+            "Cold Brew Cam Quế ở đây thực sự rất đáng thử. Vị cà phê thanh, không bị gắt, thơm mùi vỏ cam tươi. Nhạc nhẹ nhàng vừa đủ để đọc sách hay ôn bài."
+          </p>
+          <footer class="reviewer">
+            <strong>Trần Hoàng Nam</strong>
+            <span>Sinh viên Đại học</span>
+          </footer>
+        </article>
+
+        <!-- Đánh giá 3 -->
+        <article class="card review-card" tabindex="0" data-aos="zoom-in" data-aos-delay="300">
+          <p class="review-quote">
+            "Phong cách tối giản nâu kem lên hình góc nào cũng đẹp. Nhân viên pha chế rất chu đáo, luôn hỏi khách muốn uống độ ngọt như thế nào trước khi làm."
+          </p>
+          <footer class="reviewer">
+            <strong>Lê Thảo Vy</strong>
+            <span>Nhiếp ảnh gia tự do</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. OPENING HOURS & CONTACT SECTION -->
+    <section id="contact" class="section-container contact-section" data-aos="fade-up">
+      <article class="opening-hours" data-aos="fade-up" data-aos-delay="100">
+        <h2>Giờ Mở Cửa</h2>
+        <p>Ghé thăm chúng tôi để thưởng thức tách cà phê nóng hổi mỗi ngày:</p>
+        <dl class="hours-list">
+          <div>
+            <dt>Thứ Hai – Thứ Sáu</dt>
+            <dd>07:00 – 21:30</dd>
+          </div>
+          <div>
+            <dt>Thứ Bảy – Chủ Nhật</dt>
+            <dd>07:30 – 22:30</dd>
+          </div>
+          <div>
+            <dt>Ngày Lễ</dt>
+            <dd>Mở cửa xuyên suốt</dd>
+          </div>
+        </dl>
+        <p class="contact-note">
+          * Nhận đặt bàn trước cho nhóm học tập hoặc họp mặt từ 6–15 người (miễn phí máy chiếu mini).
+        </p>
+      </article>
+
+      <article class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <h2>Đặt Bàn &amp; Liên Hệ</h2>
+        <form action="#contact" method="get" class="contact-form">
+          <label for="fullname">Họ và tên của bạn</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Ví dụ: Nguyễn Văn A" required>
+
+          <label for="phone">Số điện thoại</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ví dụ: 0901 234 567" required>
+
+          <label for="message">Thông tin đặt bàn (Giờ đến, số người)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Ví dụ: Bàn 4 người lúc 9h sáng Chủ Nhật, gần ổ cắm điện..."></textarea>
+
+          <button type="submit" class="btn-cta">Gửi yêu cầu đặt bàn</button>
+        </form>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <section class="footer-brand">
+        <h3>LacHong cafe and tea</h3>
+        <address>
+          Địa chỉ: Số 10 Huỳnh Văn Nghệ, Phường Bửu Long, TP. Biên Hòa, Đồng Nai<br>
+          Điện thoại: <a href="tel:02513952111">0251 3952 111</a><br>
+          Email: <a href="mailto:hello@lachongcafe.vn">hello@lachongcafe.vn</a>
+        </address>
+      </section>
+
+      <nav class="footer-social" aria-label="Mạng xã hội">
+        <h3>Kết Nối Với Quán</h3>
+        <ul>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p class="copyright">
+      &copy; 2026 LacHong cafe and tea. Thiết kế phục vụ bài kiểm tra giữa kỳ môn Thiết kế Web.
+    </p>
+  </footer>
+
+  <!-- Thư viện AOS JS qua CDN và đúng 1 dòng khởi tạo bắt buộc -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
